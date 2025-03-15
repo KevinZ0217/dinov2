@@ -10,6 +10,7 @@
 
 PYTHONPATH="/users/jzhan708/scratch/robust_dinov2" python dinov2/run/train/train.py \
     --nodes 1 \
+    --ngpus 4 \
     --config-file dinov2/configs/ssl_200_clean_config.yaml \
     --output-dir output_clean-200 \
     --max_to_keep 45 \
