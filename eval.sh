@@ -26,6 +26,7 @@ do
 	do
 	PYTHONPATH="/users/jzhan708/scratch/robust_dinov2" python dinov2/run/eval/linear_fast.py \
             --config-file output_size112-200-resume-0-150-200-0-50-50/config.yaml \
+	    --ngpus 4 \
             --pretrained-weights output_size112-200-resume-0-150-200-0-50-50/eval/training_$step/teacher_checkpoint.pth \
             --output-dir output_size112-200-resume-0-150-200-0-50-50/eval/training_$step/corruption/linear_$corruption$level \
             --classifier-fpath output_size112-200-resume-0-150-200-0-50-50/eval/training_$step/linear/model_final.pth \
