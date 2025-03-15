@@ -10,9 +10,9 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --open-mode=append
 #SBATCH --output=/oscar/scratch/jzhan708/robust_dinov2/output_clean-200_size112/%j_0_log.out
-#SBATCH --partition=learnlab
+#SBATCH --partition=gpu
 #SBATCH --signal=USR2@120
-#SBATCH --time=2800
+#SBATCH --time=4500
 #SBATCH --wckey=submitit
 
 # command
