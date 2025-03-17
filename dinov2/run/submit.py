@@ -99,7 +99,7 @@ def submit_jobs(task_class, args, name: str):
 
     kwargs = {}
 
-#    kwargs["slurm_constraint"]="l40s"
+   kwargs["slurm_constraint"]="l40s"
     if args.use_volta32:
         kwargs["slurm_constraint"] = "volta32gb"
     if args.comment:
