@@ -59,7 +59,7 @@ def get_user_checkpoint_path(cluster_type: Optional[ClusterType] = None) -> Opti
 
 
 def get_slurm_partition(cluster_type: Optional[ClusterType] = None) -> Optional[str]:
-    return "gpu"
+    return "gpu-he"
 #    cluster_type = get_cluster_type(cluster_type)
 #    if cluster_type is None:
 #        return None
