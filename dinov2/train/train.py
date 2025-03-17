@@ -7,8 +7,7 @@ import argparse
 import logging
 import math
 import os
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+
 from functools import partial
 
 from fvcore.common.checkpoint import PeriodicCheckpointer
